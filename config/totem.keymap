@@ -46,12 +46,6 @@
             bindings = <&kp>, <&kp>;
         };
 
-        shift_space: behavior {
-            compatible = "zmk,behavior-macro";
-            label = "SHIFT_SPACE";
-            #binding-cells = <0>;
-            bindings = <&lsft &kp SPACE>;
-        };
     };
 
     combos {
