@@ -46,38 +46,52 @@
             bindings = <&kp>, <&kp>;
         };
 
-        td_net0: td_net0 {
+        td_Macro_Net: td_Macro_Net {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_NET0";
+            label = "TD_MACRO_NET";
             #binding-cells = <0>;
-            bindings = <&net_macro1>, <&net_macro2>;
+            bindings = <&Macro_Net1>, <&Macro_Net2>;
 
             tapping-term-ms = <200>;
+        };
+
+        td_Refresh: td_Refresh {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_REFRESH";
+            #binding-cells = <0>;
+            bindings = <&kp LC(R)>, <&Mecro_Refresh>;
         };
     };
 
     combos { compatible = "zmk,combos"; };
 
     macros {
-        net_macro1: net_macro {
+        Macro_Net1: net_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_ARROW &kp LEFT_ARROW &kp N0 &kp ENTER>;
             label = "NET_MACRO";
         };
 
-        net_macro2: net_macro2 {
+        Macro_Net2: net_macro2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_ARROW &kp N0 &kp N0 &kp ENTER>;
             label = "NET_MACRO2";
         };
 
-        Log: Log {
+        Mecro_Log: Mecro_Log {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp D &kp L &kp D &kp M &kp D &kp D &kp L>;
-            label = "LOG";
+            label = "MECRO_LOG";
+        };
+
+        Mecro_Refresh: Mecro_Refresh {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp LC(C) &kp LC(R)>;
+            label = "MECRO_REFRESH";
         };
     };
 
@@ -107,10 +121,10 @@
         Numpad {
             display-name = "Numpad";
             bindings = <
-           &kp TILDE  &kp LC(W)       &kp UP_ARROW    &kp LC(R)        &kp LC(T)        &kp N7         &kp N8        &kp N9        &kp MINUS       &kp PLUS
+           &kp TILDE  &kp LC(W)       &kp UP_ARROW    &td_Refresh      &kp LC(T)        &kp N7         &kp N8        &kp N9        &kp MINUS       &kp PLUS
            &kp LC(A)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(F)        &kp NUMBER_4   &kp N5        &kp NUMBER_6  &kp UNDERSCORE  &kp COLON
 &kp LSHFT  &kp LC(Z)  &kp LC(X)       &kp LC(C)       &kp LC(V)        &kp C_AC_HOME    &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL       &kp SLASH  &kp RSHFT
-                                      &Log            &td_net0         &trans           &kp BACKSPACE  &kp N0        &kp PERIOD
+                                      &Mecro_Log      &td_Macro_Net    &trans           &kp BACKSPACE  &kp N0        &kp PERIOD
             >;
         };
 
