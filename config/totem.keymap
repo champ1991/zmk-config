@@ -49,6 +49,22 @@
 
     combos { compatible = "zmk,combos"; };
 
+    macros {
+        net_macro1: net_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ARROW &kp LEFT_ARROW &kp N0 &kp ENTER>;
+            label = "NET_MACRO";
+        };
+
+        net_macro2: net_macro2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ARROW &kp N0 &kp N0 &kp ENTER>;
+            label = "NET_MACRO2";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -75,10 +91,10 @@
         Numpad {
             display-name = "Numpad";
             bindings = <
-           &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET     &kp AMPERSAND  &kp KP_ASTERISK  &kp MINUS       &kp PLUS
-           &trans    &trans  &trans    &trans      &trans         &kp NUMBER_4  &trans         &trans           &kp UNDERSCORE  &kp COLON
-&kp LSHFT  &trans    &trans  &trans    &trans      &trans         &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3     &kp EQUAL       &kp SLASH  &kp RSHFT
-                             &trans    &trans      &trans         &trans        &trans         &trans
+           &kp TILDE  &kp LC(W)       &kp UP_ARROW    &kp LC(R)        &kp LC(T)        &kp N7         &kp N8        &kp N9        &kp MINUS       &kp PLUS
+           &kp LC(A)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(F)        &kp NUMBER_4   &kp N5        &kp NUMBER_6  &kp UNDERSCORE  &kp COLON
+&kp LSHFT  &kp LC(Z)  &kp LC(X)       &kp LC(C)       &kp LC(V)        &kp C_AC_HOME    &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL       &kp SLASH  &kp RSHFT
+                                      &net_macro2     &net_macro1      &trans           &kp BACKSPACE  &kp N0        &kp PERIOD
             >;
         };
 
