@@ -122,7 +122,15 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        Delete {
+            bindings = <&kp DELETE>;
+            key-positions = <11 12>;
+            layers = <0>;
+        };
+    };
 
     macros {
         Macro_Net1: net_macro {
