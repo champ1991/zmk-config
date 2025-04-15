@@ -120,6 +120,19 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        hmc: homerow_mods_ctrl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMC";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
+            global-quick-tap;
+            bindings = <&kp>, <&kp>;
+
+            hold-trigger-key-positions = <23 24>;
+        };
     };
 
     combos {
