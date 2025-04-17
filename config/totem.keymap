@@ -133,6 +133,15 @@
 
             hold-trigger-key-positions = <23 24>;
         };
+
+        OSM_shift: OSM_shift {
+            compatible = "zmk,behavior-sticky-key";
+            label = "OSM_SHIFT";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <200>;
+            quick-release;
+        };
     };
 
     combos {
@@ -200,7 +209,7 @@
             bindings = <
            &over_task_q  &kp W        &kp E       &kp R        &kp T          &kp Y            &kp U         &over_Up_i     &kp O          &kp P
            &hm LCTRL A   &hm LCTRL S  &hm LWIN D  &hm LALT F   &kp G          &kp H            &over_Left_j  &over_Down_k   &over_Right_l  &hm RSHFT SEMICOLON
-&kp LSHFT  &kp Z         &kp X        &kp C       &kp V        &kp B          &kp N            &kp M         &kp COMMA      &kp DOT        &kp SLASH            &kp RSHFT
+&kp LSHFT  &kp Z         &kp X        &kp C       &kp V        &kp B          &kp N            &kp M         &kp COMMA      &kp DOT        &kp SLASH            &OSM_shift RSHFT
                                       &lt 4 TAB   &lt 1 SPACE  &lt 2 ENTER    &lt 3 BACKSPACE  &kp SPACE     &kp LS(SPACE)
             >;
         };
