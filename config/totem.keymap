@@ -169,6 +169,12 @@
             key-positions = <0 1>;
             layers = <0>;
         };
+
+        brackets {
+            bindings = <&Macro_brackets>;
+            key-positions = <13 14>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -198,6 +204,13 @@
             #binding-cells = <0>;
             bindings = <&kp LC(A) &kp LC(C) &kp LC(R)>;
             label = "MECRO_REFRESH";
+        };
+
+        Macro_brackets: Macro_brackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR &kp RPAR &kp LS(LEFT_ARROW)>;
+            label = "MACRO_BRACKETS";
         };
     };
 
