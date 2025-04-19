@@ -227,8 +227,8 @@
             >;
         };
 
-        Function {
-            display-name = "Function";
+        Media {
+            display-name = "Media";
             bindings = <
            &kp F1  &kp F2   &kp F3   &kp F4   &kp K_MUTE           &trans          &trans     &trans     &trans             &trans
            &kp F5  &kp F6   &kp F7   &kp F8   &kp C_VOLUME_UP      &kp MINUS       &kp PLUS   &kp SQT    &kp DOUBLE_QUOTES  &kp COLON
@@ -258,7 +258,7 @@
         };
 
         Shortcut {
-            display-name = "Shortcut";
+            display-name = "Short";
             bindings = <
                    &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(N5)           &trans  &trans  &trans  &trans  &trans
                    &kp LA(LC(A))     &kp LA(LC(S))     &kp LA(LC(D))     &kp LA(LC(F))     &td_mail             &trans  &trans  &trans  &trans  &trans
@@ -267,7 +267,7 @@
             >;
         };
 
-        layer_5 {
+        Dexter {
             bindings = <
            &kp Q  &kp W  &kp F  &kp P  &kp B    &kp J  &kp L      &kp U      &kp Y    &kp SEMI
            &kp A  &kp R  &kp S  &kp T  &kp G    &kp M  &kp N      &kp E      &kp I    &kp O
@@ -275,7 +275,7 @@
                          &sk A  &kp A  &kp A    &kp A  &kp SPACE  &trans
             >;
 
-            label = "콜맥DH";
+            label = "Dexter";
         };
     };
 };
