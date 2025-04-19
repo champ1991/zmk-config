@@ -240,10 +240,10 @@
         Totem {
             display-name = "Totem";
             bindings = <
-           &kp Q         &kp W               &kp E           &kp R        &kp T               &kp Y            &kp U           &kp I           &kp O               &kp P
-           &hmc LCTRL A  &hm LS(LEFT_WIN) S  &hm LEFT_ALT D  &kp F        &kp G               &kp H            &hm LEFT_ALT J  &hm LEFT_GUI K  &hm LEFT_CONTROL L  &MT_hold RSHFT SEMICOLON
-&kp LSHFT  &kp Z         &kp X               &kp C           &kp V        &kp B               &kp N            &kp M           &kp COMMA       &kp DOT             &kp SLASH                 &OSM_shift RSHFT
-                                             &lt 4 TAB       &lt 1 SPACE  &LT_hold 2 ENTER    &lt 3 BACKSPACE  &kp SPACE       &kp LS(SPACE)
+           &kp Q         &kp W           &kp E           &kp R        &kp T               &kp Y            &kp U           &kp I           &kp O               &kp P
+           &hmc LCTRL A  &hm LEFT_WIN S  &hm LEFT_ALT D  &kp F        &kp G               &kp H            &hm LEFT_ALT J  &hm LEFT_GUI K  &hm LEFT_CONTROL L  &MT_hold RSHFT SEMICOLON
+&kp LSHFT  &kp Z         &kp X           &kp C           &kp V        &kp B               &kp N            &kp M           &kp COMMA       &kp DOT             &kp SLASH                 &OSM_shift RSHFT
+                                         &lt 4 TAB       &lt 1 SPACE  &LT_hold 2 ENTER    &lt 3 BACKSPACE  &kp SPACE       &kp LS(SPACE)
             >;
         };
 
