@@ -218,7 +218,7 @@
         compatible = "zmk,keymap";
 
         Totem {
-            display-name = "Totem";
+            display-name = "kickboard";
             bindings = <
            &over_task_q  &kp W        &kp E       &kp R        &kp T          &kp Y            &kp U         &over_Up_i     &kp O          &kp P
            &hm LCTRL A   &hm LCTRL S  &hm LWIN D  &hm LALT F   &kp G          &kp H            &over_Left_j  &over_Down_k   &over_Right_l  &hm RSHFT SEMICOLON
@@ -228,7 +228,7 @@
         };
 
         Media {
-            display-name = "Media";
+            display-name = "gallury";
             bindings = <
            &kp F1  &kp F2   &kp F3   &kp F4   &kp K_MUTE           &trans          &trans     &trans     &trans             &trans
            &kp F5  &kp F6   &kp F7   &kp F8   &kp C_VOLUME_UP      &kp MINUS       &kp PLUS   &kp SQT    &kp DOUBLE_QUOTES  &kp COLON
@@ -275,7 +275,7 @@
                          &sk A  &kp A  &kp A    &kp A  &kp SPACE  &trans
             >;
 
-            label = "Dexter";
+            label = "DC inside";
         };
     };
 };
