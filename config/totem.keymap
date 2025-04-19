@@ -151,6 +151,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <240>;
             quick-tap-ms = <140>;
+            retro-tap;
         };
 
         MT_hold: MT_hold {
@@ -194,6 +195,11 @@
             bindings = <&Macro_brackets>;
             key-positions = <13 14>;
             layers = <0>;
+        };
+
+        pP {
+            bindings = <&kp LS(P)>;
+            key-positions = <9 19>;
         };
     };
 
