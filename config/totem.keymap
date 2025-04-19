@@ -218,7 +218,7 @@
         compatible = "zmk,keymap";
 
         Totem {
-            display-name = "kickboard";
+            display-name = "kickbod";
             bindings = <
            &over_task_q  &kp W        &kp E       &kp R        &kp T          &kp Y            &kp U         &over_Up_i     &kp O          &kp P
            &hm LCTRL A   &hm LCTRL S  &hm LWIN D  &hm LALT F   &kp G          &kp H            &over_Left_j  &over_Down_k   &over_Right_l  &hm RSHFT SEMICOLON
@@ -275,7 +275,7 @@
                          &sk A  &kp A  &kp A    &kp A  &kp SPACE  &trans
             >;
 
-            label = "DC inside";
+            label = "costam";
         };
     };
 };
