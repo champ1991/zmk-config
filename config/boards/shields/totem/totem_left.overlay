@@ -25,3 +25,10 @@
         , <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         ;
  };
+
+/ {
+    power-management {
+        compatible = "zmk,power-management";
+        sleep-timeout-ms = <60000>;
+    };
+};
