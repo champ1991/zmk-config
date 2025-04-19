@@ -250,10 +250,10 @@
         Media {
             display-name = "Media";
             bindings = <
-           &kp F1  &kp F2   &kp F3   &kp F4   &kp K_MUTE           &trans          &trans     &trans     &trans             &trans
-           &kp F5  &kp F6   &kp F7   &kp F8   &kp C_VOLUME_UP      &kp MINUS       &kp PLUS   &kp SQT    &kp DOUBLE_QUOTES  &kp COLON
-&kp LSHFT  &kp F9  &kp F10  &kp F11  &kp F12  &kp C_VOLUME_DOWN    &kp UNDERSCORE  &kp EQUAL  &kp COMMA  &kp PERIOD         &kp SLASH  &kp RSHFT
-                            &trans   &trans   &trans               &trans          &trans     &kp DOT
+           &kp F1  &kp F2   &kp F3   &kp F4   &kp K_MUTE           &trans          &trans              &kp LS(UP_ARROW)    &trans               &trans
+           &kp F5  &kp F6   &kp F7   &kp F8   &kp C_VOLUME_UP      &kp MINUS       &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp COLON
+&kp LSHFT  &kp F9  &kp F10  &kp F11  &kp F12  &kp C_VOLUME_DOWN    &kp UNDERSCORE  &kp EQUAL           &kp COMMA           &kp PERIOD           &kp SLASH  &kp RSHFT
+                            &trans   &trans   &trans               &trans          &trans              &kp DOT
             >;
         };
 
