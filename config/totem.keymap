@@ -157,7 +157,7 @@
         MT_hold: MT_hold {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_HOLD";
-            bindings = <&kp>, <&kp>;
+            bindings = <&OSM_shift>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <240>;
@@ -277,8 +277,8 @@
             display-name = "Special";
             bindings = <
            &kp EXCLAMATION  &kp AT_SIGN  &kp HASH       &kp DOLLAR      &kp PERCENT             &kp CARET              &kp AMPERSAND    &kp UP_ARROW      &kp ASTERISK     &kp DOUBLE_QUOTES
-           &kp TILDE        &trans       &trans         &trans          &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp LEFT_ARROW   &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp SQT
-&kp LSHFT  &kp GRAVE        &trans       &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &kp GREATER_THAN  &trans           &kp QUESTION       &kp RSHFT
+           &kp TILDE        &trans       &trans         &trans          &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp LEFT_ARROW   &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp QUESTION
+&kp LSHFT  &kp GRAVE        &trans       &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &kp GREATER_THAN  &trans           &kp QUESTION       &kp SQT
                                          &kp LEFT_GUI   &kp SPACE       &kp ENTER               &trans                 &kp LEFT_ARROW   &kp RIGHT_ARROW
             >;
         };
