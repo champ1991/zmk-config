@@ -235,7 +235,7 @@
         Macro_brackets: Macro_brackets {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LPAR &kp RPAR &kp LS(LEFT_ARROW)>;
+            bindings = <&kp LPAR &kp RPAR &kp LEFT_ARROW>;
             label = "MACRO_BRACKETS";
         };
     };
