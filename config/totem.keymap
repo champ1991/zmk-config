@@ -157,7 +157,7 @@
         MT_hold: MT_hold {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_HOLD";
-            bindings = <&OSM_shift>, <&kp>;
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <240>;
@@ -246,10 +246,10 @@
         Totem {
             display-name = "Totem";
             bindings = <
-           &kp Q         &kp W           &kp E           &kp R        &kp T               &kp Y            &kp U           &kp I           &kp O               &kp P
-           &hmc LCTRL A  &hm LEFT_WIN S  &hm LEFT_ALT D  &kp F        &kp G               &kp H            &hm LEFT_ALT J  &hm LEFT_GUI K  &hm LEFT_CONTROL L  &MT_hold RSHFT SEMICOLON
-&kp LSHFT  &kp Z         &kp X           &kp C           &kp V        &kp B               &kp N            &kp M           &kp COMMA       &kp DOT             &kp SLASH                 &OSM_shift RSHFT
-                                         &lt 4 TAB       &lt 1 SPACE  &LT_hold 2 ENTER    &lt 3 BACKSPACE  &kp SPACE       &kp LS(SPACE)
+           &kp Q             &kp W           &kp E               &kp R           &kp T               &kp Y            &kp U      &kp I          &kp O    &kp P
+           &hm LEFT_SHIFT A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_WIN F  &kp G               &kp H            &kp J      &kp K          &kp L    &MT_hold RSHFT SEMICOLON
+&kp LSHFT  &kp Z             &kp X           &kp C               &kp V           &kp B               &kp N            &kp M      &kp COMMA      &kp DOT  &kp SLASH                 &OSM_shift RSHFT
+                                             &lt 4 TAB           &lt 1 SPACE     &LT_hold 2 ENTER    &lt 3 BACKSPACE  &kp SPACE  &kp LS(SPACE)
             >;
         };
 
@@ -266,30 +266,30 @@
         Numpad {
             display-name = "Numpad";
             bindings = <
-           &kp TILDE  &kp LC(W)       &kp UP_ARROW    &td_Refresh      &td_chrome_newtab    &kp N7         &kp N8        &kp N9        &kp MINUS       &kp PLUS
-           &kp LC(A)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(F)            &kp NUMBER_4   &kp N5        &kp NUMBER_6  &kp UNDERSCORE  &kp COLON
-&kp LSHFT  &kp LC(Z)  &kp LC(X)       &kp LC(C)       &kp LC(V)        &kp C_AC_HOME        &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp COMMA       &kp SLASH  &kp EQUAL
-                                      &Mecro_Log      &td_Macro_Net    &trans               &kp BACKSPACE  &kp N0        &kp PERIOD
+           &kp TILDE             &kp LC(W)       &kp UP_ARROW    &td_Refresh      &td_chrome_newtab    &kp N7         &kp N8        &kp N9        &kp MINUS       &kp PLUS
+           &hm LEFT_SHIFT LC(A)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(F)            &kp NUMBER_4   &kp N5        &kp NUMBER_6  &kp UNDERSCORE  &kp COLON
+&kp LSHFT  &kp LC(Z)             &kp LC(X)       &kp LC(C)       &kp LC(V)        &kp C_AC_HOME        &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp COMMA       &kp SLASH  &kp EQUAL
+                                                 &Mecro_Log      &td_Macro_Net    &trans               &kp BACKSPACE  &kp N0        &kp PERIOD
             >;
         };
 
         Special {
             display-name = "Special";
             bindings = <
-           &kp EXCLAMATION  &kp AT_SIGN  &kp HASH       &kp DOLLAR      &kp PERCENT             &kp CARET              &kp AMPERSAND    &kp UP_ARROW      &kp ASTERISK     &kp DOUBLE_QUOTES
-           &kp TILDE        &trans       &trans         &trans          &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp LEFT_ARROW   &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp QUESTION
-&kp LSHFT  &kp GRAVE        &trans       &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &kp GREATER_THAN  &trans           &kp QUESTION       &kp SQT
-                                         &kp LEFT_GUI   &kp SPACE       &kp ENTER               &trans                 &kp LEFT_ARROW   &kp RIGHT_ARROW
+           &kp EXCLAMATION  &kp AT_SIGN   &kp HASH       &kp DOLLAR      &kp PERCENT             &kp CARET              &kp AMPERSAND    &kp UP_ARROW      &kp ASTERISK     &kp DOUBLE_QUOTES
+           &kp TILDE        &kp QUESTION  &trans         &trans          &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp LEFT_ARROW   &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp QUESTION
+&kp LSHFT  &kp GRAVE        &trans        &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &kp GREATER_THAN  &trans           &kp QUESTION       &kp SQT
+                                          &kp TAB        &kp SPACE       &kp ENTER               &trans                 &kp LEFT_ARROW   &kp RIGHT_ARROW
             >;
         };
 
         Shortcut {
             display-name = "Short";
             bindings = <
-                   &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(N5)           &trans  &trans              &kp LS(UP_ARROW)    &trans               &trans
-                   &kp LA(LC(A))     &kp LA(LC(S))     &kp LA(LC(D))     &kp LA(LC(F))     &td_mail             &trans  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &trans
-&kp LA(LC(LS(F)))  &kp Z             &kp LA(LC(X))     &kp LA(LC(C))     &kp LA(LC(V))     &kp LA(LC(B))        &trans  &trans              &trans              &trans               &trans  &trans
-                                                       &trans            &kp LGUI          &kp LS(LA(LC(A)))    &trans  &trans              &trans
+                    &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)   &kp LG(N5)           &trans  &trans  &trans  &trans  &trans
+                    &kp LA(LC(A))     &kp LA(LC(S))     &kp LA(LC(D))     &kp LA(LC(F))      &td_mail             &trans  &trans  &trans  &trans  &trans
+&kp LC(LS(ESCAPE))  &kp Z             &kp LA(LC(X))     &kp LA(LC(C))     &kp LA(LC(V))      &kp LA(LC(B))        &trans  &trans  &trans  &trans  &trans  &trans
+                                                        &trans            &kp LS(LC(LA(F)))  &kp LS(LA(LC(A)))    &trans  &trans  &trans
             >;
         };
 
