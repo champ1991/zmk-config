@@ -76,13 +76,13 @@
             bindings = <&kp LC(T)>, <&kp LC(LS(T))>;
         };
 
-        over_task_q: over_task_q {
+        over_question: over_question {
             compatible = "zmk,behavior-mod-morph";
-            label = "OVER_TASK_Q";
-            bindings = <&kp Q>, <&kp LS(LC(ESCAPE))>;
+            label = "OVER_QUESTION";
+            bindings = <&kp PERIOD>, <&kp QUESTION>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_RSFT)>;
         };
 
         over_Up_i: over_Up_i {
@@ -161,7 +161,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <240>;
-            quick-tap-ms = <180>;
+            quick-tap-ms = <200>;
         };
     };
 
@@ -257,9 +257,9 @@
         Totem {
             display-name = "Totem";
             bindings = <
-                      &kp Q             &kp W           &kp E               &kp R           &kp T               &kp Y            &kp U      &kp I          &kp O    &kp P
-                      &hm LEFT_SHIFT A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_WIN F  &kp G               &kp H            &kp J      &kp K          &kp L    &MT_hold RSHFT SEMICOLON
-&kp NON_US_BACKSLASH  &kp Z             &kp X           &kp C               &kp V           &kp B               &kp N            &kp M      &kp COMMA      &kp DOT  &kp SLASH                 &kp SQT
+                      &kp Q             &kp W           &kp E               &kp R           &kp T               &kp Y            &kp U      &kp I          &kp O           &kp P
+                      &hm LEFT_SHIFT A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_WIN F  &kp G               &kp H            &kp J      &kp K          &kp L           &MT_hold RSHFT SEMICOLON
+&kp NON_US_BACKSLASH  &kp Z             &kp X           &kp C               &kp V           &kp B               &kp N            &kp M      &kp COMMA      &over_question  &kp SLASH                 &kp SQT
                                                         &lt 4 TAB           &lt 1 SPACE     &LT_hold 2 ENTER    &lt 3 BACKSPACE  &kp SPACE  &kp LS(SPACE)
             >;
         };
