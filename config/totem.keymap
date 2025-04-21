@@ -131,7 +131,7 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <23 24>;
+            hold-trigger-key-positions = <9>;
         };
 
         OSM_shift: OSM_shift {
@@ -199,7 +199,7 @@
 
         pP {
             bindings = <&kp LS(P)>;
-            key-positions = <9 19>;
+            key-positions = <9 31>;
         };
 
         caps {
@@ -257,10 +257,10 @@
         Totem {
             display-name = "Totem";
             bindings = <
-                      &kp Q             &kp W           &kp E               &kp R           &kp T               &kp Y            &kp U      &kp I          &kp O           &kp P
-                      &hm LEFT_SHIFT A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_WIN F  &kp G               &kp H            &kp J      &kp K          &kp L           &MT_hold RSHFT SEMICOLON
-&kp NON_US_BACKSLASH  &kp Z             &kp X           &kp C               &kp V           &kp B               &kp N            &kp M      &kp COMMA      &over_question  &kp SLASH                 &kp SQT
-                                                        &lt 4 TAB           &lt 1 SPACE     &LT_hold 2 ENTER    &lt 3 BACKSPACE  &kp SPACE  &kp LS(SPACE)
+                      &kp Q              &kp W           &kp E               &kp R           &kp T               &kp Y            &kp U      &kp I          &kp O           &kp P
+                      &hmc LEFT_SHIFT A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_WIN F  &kp G               &kp H            &kp J      &kp K          &kp L           &MT_hold RSHFT SEMICOLON
+&kp NON_US_BACKSLASH  &kp Z              &kp X           &kp C               &kp V           &kp B               &kp N            &kp M      &kp COMMA      &over_question  &kp SLASH                 &kp SQT
+                                                         &lt 4 TAB           &lt 1 SPACE     &LT_hold 2 ENTER    &lt 3 BACKSPACE  &kp SPACE  &kp LS(SPACE)
             >;
         };
 
