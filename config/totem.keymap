@@ -41,7 +41,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
+            quick-tap-ms = <130>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
@@ -127,11 +127,11 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
+            quick-tap-ms = <130>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <9 8>;
+            hold-trigger-key-positions = <34>;
         };
 
         OSM_shift: OSM_shift {
@@ -211,6 +211,7 @@
         question {
             bindings = <&kp QUESTION>;
             key-positions = <27 28>;
+            timeout-ms = <350>;
         };
 
         apo {
@@ -262,10 +263,10 @@
         Totem {
             display-name = "Totem";
             bindings = <
-                       &kp Q               &kp W           &kp E           &kp R        &kp T               &kp Y            &kp U      &kp I          &kp O       &kp P
-                       &hm LEFT_CONTROL A  &hm LEFT_ALT S  &hm LEFT_WIN D  &kp F        &kp G               &kp H            &kp J      &kp K          &kp L       &kp SEMICOLON
-&OSM_shift LEFT_SHIFT  &kp Z               &kp X           &kp C           &kp V        &kp B               &kp N            &kp M      &kp COMMA      &kp PERIOD  &kp SLASH      &OSM_shift RIGHT_SHIFT
-                                                           &lt 4 TAB       &lt 1 SPACE  &LT_hold 2 ENTER    &lt 3 BACKSPACE  &kp SPACE  &kp LS(SPACE)
+                       &kp Q               &kp W           &kp E           &kp R              &kp T               &kp Y            &kp U      &kp I          &kp O       &kp P
+                       &hm LEFT_CONTROL A  &hm LEFT_ALT S  &hm LEFT_WIN D  &hmc LEFT_SHIFT F  &kp G               &kp H            &kp J      &kp K          &kp L       &kp SEMICOLON
+&OSM_shift LEFT_SHIFT  &kp Z               &kp X           &kp C           &kp V              &kp B               &kp N            &kp M      &kp COMMA      &kp PERIOD  &kp SLASH      &OSM_shift RIGHT_SHIFT
+                                                           &lt 4 TAB       &lt 1 SPACE        &LT_hold 2 ENTER    &lt 3 BACKSPACE  &kp SPACE  &kp LS(SPACE)
             >;
         };
 
