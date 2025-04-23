@@ -214,11 +214,6 @@
             timeout-ms = <350>;
         };
 
-        hj {
-            bindings = <&kp SQT>;
-            key-positions = <15 16>;
-        };
-
         del {
             bindings = <&kp DEL>;
             key-positions = <18 17>;
