@@ -52,7 +52,7 @@
             #binding-cells = <0>;
             bindings = <&Macro_Net1>, <&Macro_Net2>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <350>;
         };
 
         td_Refresh: td_Refresh {
@@ -60,6 +60,8 @@
             label = "TD_REFRESH";
             #binding-cells = <0>;
             bindings = <&kp LC(R)>, <&Mecro_Refresh>;
+
+            tapping-term-ms = <350>;
         };
 
         td_mail: td_mail {
@@ -74,6 +76,8 @@
             label = "TD_CHROME_NEWTAB";
             #binding-cells = <0>;
             bindings = <&kp LC(T)>, <&kp LC(LS(T))>;
+
+            tapping-term-ms = <350>;
         };
 
         over_question: over_question {
@@ -265,11 +269,7 @@
         Mecro_Refresh: Mecro_Refresh {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp LC(A)>,
-                <&macro_wait_time 20>,
-                <&kp LC(C) &kp LC(R)>;
-
+            bindings = <&kp LC(A) &kp LC(C) &kp LC(R)>;
             label = "MECRO_REFRESH";
         };
 
