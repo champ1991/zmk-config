@@ -178,8 +178,8 @@
             layers = <0>;
         };
 
-        Backspace {
-            bindings = <&kp BACKSPACE>;
+        Korean {
+            bindings = <&kp LS(SPACE)>;
             key-positions = <16 17>;
             layers = <0>;
         };
@@ -234,13 +234,18 @@
         };
 
         copy {
-            bindings = <&kp LC(C)>;
+            bindings = <&kp TILDE>;
             key-positions = <22 23>;
         };
 
         paste {
-            bindings = <&kp LC(V)>;
+            bindings = <&kp EXCLAMATION>;
             key-positions = <23 24>;
+        };
+
+        qua {
+            bindings = <&kp SQT>;
+            key-positions = <29 28>;
         };
     };
 
