@@ -80,13 +80,13 @@
             tapping-term-ms = <350>;
         };
 
-        over_question: over_question {
+        over_save: over_save {
             compatible = "zmk,behavior-mod-morph";
-            label = "OVER_QUESTION";
-            bindings = <&kp PERIOD>, <&kp QUESTION>;
+            label = "OVER_SAVE";
+            bindings = <&kp S>, <&kp LC(S)>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT)>;
+            mods = <(MOD_LSFT)>;
         };
 
         over_Up_i: over_Up_i {
@@ -247,6 +247,16 @@
             bindings = <&kp SQT>;
             key-positions = <29 28>;
         };
+
+        alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <21 22>;
+        };
+
+        ctrl {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <22 23>;
+        };
     };
 
     macros {
@@ -292,10 +302,10 @@
         Totem {
             display-name = "Totem";
             bindings = <
-                       &kp Q               &kp W           &kp E           &kp R              &kp T               &kp Y            &kp U      &kp I          &kp O       &kp P
-                       &hm LEFT_CONTROL A  &hm LEFT_ALT S  &hm LEFT_WIN D  &hmc LEFT_SHIFT F  &kp G               &kp H            &kp J      &kp K          &kp L       &kp SEMICOLON
-&OSM_shift LEFT_SHIFT  &kp Z               &kp X           &kp C           &kp V              &kp B               &kp N            &kp M      &kp COMMA      &kp PERIOD  &kp SLASH      &OSM_shift RIGHT_SHIFT
-                                                           &lt 4 TAB       &lt 1 SPACE        &LT_hold 2 ENTER    &lt 3 BACKSPACE  &kp SPACE  &kp LS(SPACE)
+                       &kp Q  &kp W       &kp E      &kp R        &kp T               &kp Y            &kp U      &kp I          &kp O       &kp P
+                       &kp A  &over_save  &kp D      &kp F        &kp G               &kp H            &kp J      &kp K          &kp L       &kp SEMICOLON
+&OSM_shift LEFT_SHIFT  &kp Z  &kp X       &kp C      &kp V        &kp B               &kp N            &kp M      &kp COMMA      &kp PERIOD  &kp SLASH      &OSM_shift RIGHT_SHIFT
+                                          &lt 4 TAB  &lt 1 SPACE  &LT_hold 2 ENTER    &lt 3 BACKSPACE  &kp SPACE  &kp LS(SPACE)
             >;
         };
 
