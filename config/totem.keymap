@@ -233,11 +233,6 @@
             key-positions = <19 9>;
         };
 
-        copy {
-            bindings = <&kp TILDE>;
-            key-positions = <22 23>;
-        };
-
         paste {
             bindings = <&kp EXCLAMATION>;
             key-positions = <23 24>;
