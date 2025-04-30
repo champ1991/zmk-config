@@ -245,7 +245,6 @@
         percent {
             bindings = <&kp PERCENT>;
             key-positions = <4 3>;
-            layers = <2>;
         };
 
         question {
@@ -265,7 +264,7 @@
         };
 
         Bang {
-            bindings = <&hm LEFT_SHIFT EXCLAMATION>;
+            bindings = <&hm LEFT_CONTROL EXCLAMATION>;
             key-positions = <23 24>;
             timeout-ms = <350>;
         };
@@ -290,6 +289,11 @@
         shift {
             bindings = <&hm LEFT_SHIFT BACKSPACE>;
             key-positions = <13 12>;
+        };
+
+        six {
+            bindings = <&kp CARET>;
+            key-positions = <6 5>;
         };
     };
 
