@@ -211,7 +211,6 @@
         Delete {
             bindings = <&hm LEFT_ALT DEL>;
             key-positions = <11 12>;
-            layers = <0>;
         };
 
         Korean {
@@ -228,13 +227,11 @@
         Esc {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
-            layers = <0>;
         };
 
         brackets {
             bindings = <&Macro_brackets>;
             key-positions = <13 14>;
-            layers = <0 2>;
         };
 
         caps {
@@ -299,6 +296,7 @@
         six {
             bindings = <&kp CARET>;
             key-positions = <6 7>;
+            layers = <0>;
         };
 
         seven {
@@ -329,6 +327,7 @@
         Macro_brackets {
             bindings = <&Macro_bracket_r>;
             key-positions = <15 16>;
+            layers = <0>;
         };
 
         TG {
