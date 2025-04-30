@@ -236,7 +236,7 @@
 
         caps {
             bindings = <&kp CAPS>;
-            key-positions = <20 31>;
+            key-positions = <12 13 16 17>;
         };
 
         four {
@@ -334,6 +334,11 @@
         TG {
             bindings = <&tog 5>;
             key-positions = <10 19>;
+        };
+
+        sleep {
+            bindings = <&kp C_SLEEP>;
+            key-positions = <20 31>;
         };
     };
 
