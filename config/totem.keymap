@@ -330,6 +330,11 @@
             bindings = <&Macro_bracket_r>;
             key-positions = <15 16>;
         };
+
+        TG {
+            bindings = <&tog 5>;
+            key-positions = <10 19>;
+        };
     };
 
     macros {
