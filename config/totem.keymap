@@ -350,6 +350,11 @@
             bindings = <&kp BACKSLASH>;
             key-positions = <31 30>;
         };
+
+        win_tab {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <0 20>;
+        };
     };
 
     macros {
