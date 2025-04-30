@@ -340,6 +340,16 @@
             bindings = <&kp C_SLEEP>;
             key-positions = <20 31>;
         };
+
+        backtick {
+            bindings = <&kp GRAVE>;
+            key-positions = <20 21>;
+        };
+
+        backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <31 30>;
+        };
     };
 
     macros {
