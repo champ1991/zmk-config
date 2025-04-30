@@ -317,8 +317,13 @@
         };
 
         eight {
-            bindings = <&none>;
+            bindings = <&kp ASTERISK>;
             key-positions = <8 9>;
+        };
+
+        wave {
+            bindings = <&kp TILDE>;
+            key-positions = <10 11>;
         };
     };
 
