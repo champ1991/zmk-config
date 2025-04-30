@@ -213,8 +213,8 @@
             key-positions = <11 12>;
         };
 
-        Korean {
-            bindings = <&kp LS(SPACE)>;
+        caps_word {
+            bindings = <&caps_word>;
             key-positions = <16 17>;
             layers = <0>;
         };
@@ -235,7 +235,7 @@
         };
 
         caps {
-            bindings = <&caps_word>;
+            bindings = <&kp CAPS>;
             key-positions = <20 31>;
         };
 
