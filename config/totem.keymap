@@ -80,45 +80,45 @@
             tapping-term-ms = <350>;
         };
 
-        over_save: over_save {
+        over_S_save: over_S_save {
             compatible = "zmk,behavior-mod-morph";
-            label = "OVER_SAVE";
+            label = "OVER_S_SAVE";
             bindings = <&kp S>, <&kp LC(S)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
 
-        over_Up_i: over_Up_i {
+        over_I_Up: over_I_Up {
             compatible = "zmk,behavior-mod-morph";
-            label = "OVER_UP_I";
+            label = "OVER_I_UP";
             bindings = <&kp I>, <&kp LS(UP_ARROW)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
 
-        over_Left_j: over_Left_j {
+        over_J_Left: over_J_Left {
             compatible = "zmk,behavior-mod-morph";
-            label = "OVER_LEFT_J";
+            label = "OVER_J_LEFT";
             bindings = <&hm LALT J>, <&kp LS(LEFT_ARROW)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
 
-        over_Down_k: over_Down_k {
+        over_K_Down: over_K_Down {
             compatible = "zmk,behavior-mod-morph";
-            label = "OVER_DOWN_K";
+            label = "OVER_K_DOWN";
             bindings = <&hm LEFT_WIN K>, <&kp LS(DOWN_ARROW)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
 
-        over_Right_l: over_Right_l {
+        over_L_Right: over_L_Right {
             compatible = "zmk,behavior-mod-morph";
-            label = "OVER_RIGHT_L";
+            label = "OVER_L_RIGHT";
             bindings = <&hm RCTRL L>, <&kp LS(RIGHT_ARROW)>;
 
             #binding-cells = <0>;
@@ -166,6 +166,42 @@
             #binding-cells = <2>;
             tapping-term-ms = <240>;
             quick-tap-ms = <200>;
+        };
+
+        over_R_f4: over_R_f4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "OVER_R_F4";
+            bindings = <&kp R>, <&kp LA(F4)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        over_D_ctl: over_D_ctl {
+            compatible = "zmk,behavior-mod-morph";
+            label = "OVER_D_CTL";
+            bindings = <&kp D>, <&kp LC(D)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        over_E_ctl: over_E_ctl {
+            compatible = "zmk,behavior-mod-morph";
+            label = "OVER_E_CTL";
+            bindings = <&kp E>, <&kp LC(E)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        over_F_ctl: over_F_ctl {
+            compatible = "zmk,behavior-mod-morph";
+            label = "OVER_F_CTL";
+            bindings = <&kp F>, <&kp LC(F)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
         };
     };
 
@@ -229,7 +265,7 @@
         };
 
         Bang {
-            bindings = <&kp EXCLAMATION>;
+            bindings = <&hm LEFT_SHIFT EXCLAMATION>;
             key-positions = <23 24>;
             timeout-ms = <350>;
         };
@@ -295,10 +331,10 @@
         Totem {
             display-name = "Totem";
             bindings = <
-                       &kp Q  &kp W       &kp E      &kp R        &kp T               &kp Y            &kp U      &kp I          &kp O       &kp P
-                       &kp A  &over_save  &kp D      &kp F        &kp G               &kp H            &kp J      &kp K          &kp L       &kp SEMICOLON
-&OSM_shift LEFT_SHIFT  &kp Z  &kp X       &kp C      &kp V        &kp B               &kp N            &kp M      &kp COMMA      &kp PERIOD  &kp SLASH      &OSM_shift RIGHT_SHIFT
-                                          &lt 4 TAB  &lt 1 SPACE  &LT_hold 2 ENTER    &lt 3 BACKSPACE  &kp SPACE  &kp LS(SPACE)
+                       &kp Q  &kp W         &over_E_ctl  &over_R_f4   &kp T               &kp Y            &kp U         &over_I_Up     &kp O          &kp P
+                       &kp A  &over_S_save  &over_D_ctl  &over_F_ctl  &kp G               &kp H            &over_J_Left  &over_K_Down   &over_L_Right  &kp SEMICOLON
+&OSM_shift LEFT_SHIFT  &kp Z  &kp X         &kp C        &kp V        &kp B               &kp N            &kp M         &kp COMMA      &kp PERIOD     &kp SLASH      &OSM_shift RIGHT_SHIFT
+                                            &lt 4 TAB    &lt 1 SPACE  &LT_hold 2 ENTER    &lt 3 BACKSPACE  &kp SPACE     &kp LS(SPACE)
             >;
         };
 
@@ -316,7 +352,7 @@
             display-name = "Numpad";
             bindings = <
                     &kp TILDE             &kp LC(W)       &kp UP_ARROW    &td_Refresh      &td_chrome_newtab    &kp N7         &kp N8        &kp N9        &kp MINUS       &kp PLUS
-                    &hm LEFT_SHIFT LC(A)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(F)            &kp NUMBER_4   &kp N5        &kp NUMBER_6  &kp UNDERSCORE  &kp COLON
+                    &hm LEFT_SHIFT LC(A)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(G)            &kp NUMBER_4   &kp N5        &kp NUMBER_6  &kp UNDERSCORE  &kp COLON
 &kp LS(LC(ESCAPE))  &kp LC(Z)             &kp LC(X)       &kp LC(C)       &kp LC(V)        &kp C_AC_HOME        &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp COMMA       &kp SLASH  &kp EQUAL
                                                           &Mecro_Log      &td_Macro_Net    &trans               &kp BACKSPACE  &kp N0        &kp PERIOD
             >;
