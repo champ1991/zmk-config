@@ -288,7 +288,7 @@
         };
 
         shift {
-            bindings = <&hm LEFT_SHIFT EXCLAMATION>;
+            bindings = <&hm LEFT_SHIFT BACKSPACE>;
             key-positions = <13 12>;
         };
     };
