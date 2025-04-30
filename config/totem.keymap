@@ -101,7 +101,7 @@
         over_J_Left: over_J_Left {
             compatible = "zmk,behavior-mod-morph";
             label = "OVER_J_LEFT";
-            bindings = <&hm LALT J>, <&kp LS(LEFT_ARROW)>;
+            bindings = <&kp J>, <&kp LS(LEFT_ARROW)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -110,7 +110,7 @@
         over_K_Down: over_K_Down {
             compatible = "zmk,behavior-mod-morph";
             label = "OVER_K_DOWN";
-            bindings = <&hm LEFT_WIN K>, <&kp LS(DOWN_ARROW)>;
+            bindings = <&kp K>, <&kp LS(DOWN_ARROW)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -119,7 +119,7 @@
         over_L_Right: over_L_Right {
             compatible = "zmk,behavior-mod-morph";
             label = "OVER_L_RIGHT";
-            bindings = <&hm RCTRL L>, <&kp LS(RIGHT_ARROW)>;
+            bindings = <&kp L>, <&kp LS(RIGHT_ARROW)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -325,6 +325,11 @@
             bindings = <&kp TILDE>;
             key-positions = <10 11>;
         };
+
+        Macro_brackets {
+            bindings = <&Macro_bracket_r>;
+            key-positions = <15 16>;
+        };
     };
 
     macros {
@@ -361,6 +366,13 @@
             #binding-cells = <0>;
             bindings = <&kp LPAR &kp RPAR &kp LEFT_ARROW>;
             label = "MACRO_BRACKETS";
+        };
+
+        Macro_bracket_r: Macro_bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW>;
+            label = "MACRO_BRACKET";
         };
     };
 
