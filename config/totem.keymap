@@ -417,10 +417,10 @@
         Media {
             display-name = "Media";
             bindings = <
-           &kp F1  &kp F2   &kp F3          &kp F4   &kp K_MUTE           &trans          &trans              &kp LS(UP_ARROW)    &trans               &trans
-           &kp F5  &kp F6   &kp F7          &kp F8   &kp C_VOLUME_UP      &kp MINUS       &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp COLON
-&kp LSHFT  &kp F9  &kp F10  &kp F11         &kp F12  &kp C_VOLUME_DOWN    &kp UNDERSCORE  &kp EQUAL           &kp COMMA           &kp PERIOD           &kp SLASH  &kp RSHFT
-                            &kp C_PREVIOUS  &trans   &kp C_NEXT           &trans          &trans              &kp DOT
+           &kp F1  &kp F2   &kp F3          &kp F4   &kp K_MUTE           &kp AMPERSAND    &kp ASTERISK  &Macro_brackets  &kp MINUS       &kp PLUS
+           &kp F5  &kp F6   &kp F7          &kp F8   &kp C_VOLUME_UP      &kp DOLLAR       &kp PERCENT   &kp CARET        &kp UNDERSCORE  &kp COLON
+&kp LSHFT  &kp F9  &kp F10  &kp F11         &kp F12  &kp C_VOLUME_DOWN    &kp EXCLAMATION  &kp AT_SIGN   &kp HASH         &kp COMMA       &kp SLASH  &kp EQUAL
+                            &kp C_PREVIOUS  &trans   &kp C_NEXT           &kp BACKSPACE    &kp SPACE     &kp DOT
             >;
         };
 
@@ -437,20 +437,20 @@
         Special {
             display-name = "Special";
             bindings = <
-           &kp EXCLAMATION  &kp AT_SIGN   &kp HASH  &kp DOLLAR      &kp PERCENT             &kp CARET              &kp AMPERSAND    &kp UP_ARROW       &kp ASTERISK     &kp DOUBLE_QUOTES
-           &kp TILDE        &kp QUESTION  &trans    &trans          &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp LEFT_ARROW   &kp DOWN_ARROW     &kp RIGHT_ARROW  &kp SQT
-&kp LSHFT  &kp GRAVE        &trans        &trans    &kp LEFT_BRACE  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp QUESTION       &OSM_shift RIGHT_SHIFT
-                                          &kp TAB   &kp SPACE       &kp ENTER               &trans                 &kp LEFT_ARROW   &kp RIGHT_ARROW
+           &kp EXCLAMATION  &kp AT_SIGN   &kp HASH  &kp DOLLAR  &kp PERCENT             &kp CARET              &kp AMPERSAND   &kp UP_ARROW     &kp ASTERISK     &kp PAGE_UP
+           &kp TILDE        &kp QUESTION  &trans    &trans      &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp PAGE_DOWN
+&kp LSHFT  &kp GRAVE        &trans        &trans    &trans      &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp HOME        &kp INSERT       &kp END          &kp QUESTION   &OSM_shift RIGHT_SHIFT
+                                          &kp TAB   &kp SPACE   &kp ENTER               &trans                 &kp LEFT_ARROW  &kp RIGHT_ARROW
             >;
         };
 
         Shortcut {
             display-name = "Short";
             bindings = <
-                    &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)   &kp LG(N5)           &trans  &trans  &trans  &trans  &trans
-                    &kp LA(LC(A))     &kp LA(LC(S))     &kp LA(LC(D))     &kp LA(LC(F))      &td_mail             &trans  &trans  &trans  &trans  &trans
-&kp LC(LS(ESCAPE))  &kp Z             &kp LA(LC(X))     &kp LA(LC(C))     &kp LA(LC(V))      &kp LA(LC(B))        &trans  &trans  &trans  &trans  &trans  &trans
-                                                        &trans            &kp LS(LC(LA(F)))  &kp LS(LA(LC(A)))    &trans  &trans  &trans
+                    &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)   &kp LG(N5)           &trans               &trans             &trans                  &trans  &trans
+                    &kp LA(LC(A))     &kp LA(LC(S))     &kp LA(LC(D))     &kp LA(LC(F))      &td_mail             &trans               &trans             &trans                  &trans  &trans
+&kp LC(LS(ESCAPE))  &kp Z             &kp LA(LC(X))     &kp LA(LC(C))     &kp LA(LC(V))      &kp LA(LC(B))        &trans               &trans             &trans                  &trans  &trans  &trans
+                                                        &trans            &kp LS(LC(LA(F)))  &kp LS(LA(LC(A)))    &kp C_AL_CALCULATOR  &kp C_AL_CALENDAR  &kp C_AL_AUDIO_BROWSER
             >;
         };
 
