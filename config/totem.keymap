@@ -237,7 +237,7 @@
         brackets {
             bindings = <&Macro_brackets>;
             key-positions = <13 14>;
-            layers = <0 2 4>;
+            layers = <0 2 3>;
         };
 
         caps {
@@ -249,14 +249,14 @@
         four {
             bindings = <&kp DOLLAR>;
             key-positions = <4 3>;
-            layers = <0 4 2>;
+            layers = <0 3 2>;
         };
 
         question {
             bindings = <&kp QUESTION>;
             key-positions = <27 28>;
             timeout-ms = <350>;
-            layers = <0 4 2>;
+            layers = <0 3 2>;
         };
 
         del {
@@ -275,7 +275,7 @@
             bindings = <&hm LEFT_CONTROL EXCLAMATION>;
             key-positions = <23 24>;
             timeout-ms = <350>;
-            layers = <0 2 4>;
+            layers = <0 2 3>;
         };
 
         qua {
@@ -307,49 +307,49 @@
         five {
             bindings = <&kp PERCENT>;
             key-positions = <6 5>;
-            layers = <0 4 2>;
+            layers = <0 3 2>;
         };
 
         six {
             bindings = <&kp CARET>;
             key-positions = <6 7>;
-            layers = <0 4 2>;
+            layers = <0 3 2>;
         };
 
         seven {
             bindings = <&kp AMPERSAND>;
             key-positions = <8 7>;
-            layers = <0 4 2>;
+            layers = <0 3 2>;
         };
 
         two {
             bindings = <&kp AT_SIGN>;
             key-positions = <1 2>;
-            layers = <0 4 2>;
+            layers = <0 3 2>;
         };
 
         three {
             bindings = <&kp HASH>;
             key-positions = <2 3>;
-            layers = <0 4 2>;
+            layers = <0 3 2>;
         };
 
         eight {
             bindings = <&kp ASTERISK>;
             key-positions = <8 9>;
-            layers = <0 4 2>;
+            layers = <0 3 2>;
         };
 
         wave {
             bindings = <&kp TILDE>;
             key-positions = <10 11>;
-            layers = <0 4 2>;
+            layers = <0 3 2>;
         };
 
         Macro_brackets {
             bindings = <&Macro_bracket_r>;
             key-positions = <15 16>;
-            layers = <0 4 2>;
+            layers = <0 3 2>;
             timeout-ms = <350>;
         };
 
@@ -438,7 +438,7 @@
                        &kp Q  &kp W         &over_E_ctl  &over_R_f4   &kp T               &kp Y            &kp U         &over_I_Up     &kp O          &kp P
                        &kp A  &over_S_save  &over_D_ctl  &over_F_ctl  &kp G               &kp H            &over_J_Left  &over_K_Down   &over_L_Right  &kp SEMICOLON
 &OSM_shift LEFT_SHIFT  &kp Z  &kp X         &kp C        &kp V        &kp B               &kp N            &kp M         &kp COMMA      &kp PERIOD     &kp SLASH      &OSM_shift RIGHT_SHIFT
-                                            &lt 6 TAB    &lt 3 SPACE  &LT_hold 4 ENTER    &lt 5 BACKSPACE  &kp SPACE     &kp LS(SPACE)
+                                            &lt 5 TAB    &lt 4 SPACE  &LT_hold 3 ENTER    &lt 4 BACKSPACE  &kp SPACE     &kp LS(SPACE)
             >;
         };
 
@@ -446,8 +446,8 @@
             bindings = <
               &kp TAB    &kp Q  &kp W     &kp E      &kp R          &kp Y     &kp U        &kp I          &kp O    &kp P
               &kp LSHFT  &kp A  &kp S     &kp D      &kp F          &kp H     &kp J        &kp K          &kp L    &kp SEMI
-&lt 3 ESCAPE  &kp LCTRL  &kp Z  &kp X     &kp C      &kp V          &kp N     &kp M        &kp COMMA      &kp DOT  &kp FSLH  &kp ENTER
-                                &kp LALT  &kp SPACE  &lt 7 ENTER    &kp BSPC  &lt 3 SPACE  &kp LS(SPACE)
+&lt 0 ESCAPE  &kp LCTRL  &kp Z  &kp X     &kp C      &kp V          &kp N     &kp M        &kp COMMA      &kp DOT  &kp FSLH  &kp ENTER
+                                &kp LALT  &kp SPACE  &lt 6 ENTER    &kp BSPC  &lt 0 SPACE  &kp LS(SPACE)
             >;
 
             label = "GAME '-'";
@@ -458,20 +458,10 @@
            &kp Q  &kp W  &kp F      &kp P        &kp B          &kp J            &kp L      &kp U          &kp Y    &kp SEMI
            &kp A  &kp R  &kp S      &kp T        &kp G          &kp M            &kp N      &kp E          &kp I    &kp O
 &kp LSHFT  &kp Z  &kp X  &kp C      &kp D        &kp V          &kp K            &kp H      &kp COMMA      &kp DOT  &kp FSLH  &kp RSHFT
-                         &lt 6 TAB  &lt 3 SPACE  &lt 4 ENTER    &lt 5 BACKSPACE  &kp SPACE  &kp LS(SPACE)
+                         &lt 5 TAB  &lt 0 SPACE  &lt 3 ENTER    &lt 4 BACKSPACE  &kp SPACE  &kp LS(SPACE)
             >;
 
             label = "Colemak";
-        };
-
-        function {
-            display-name = "Media";
-            bindings = <
-         &kp F1  &kp F2   &kp F3          &kp F4   &kp K_MUTE           &kp AMPERSAND    &kp ASTERISK  &Macro_brackets  &kp MINUS       &kp PLUS
-         &kp F5  &kp F6   &kp F7          &kp F8   &kp C_VOLUME_UP      &kp DOLLAR       &kp PERCENT   &kp CARET        &kp UNDERSCORE  &kp COLON
-&kp F13  &kp F9  &kp F10  &kp F11         &kp F12  &kp C_VOLUME_DOWN    &kp EXCLAMATION  &kp AT_SIGN   &kp HASH         &kp COMMA       &kp SLASH  &kp EQUAL
-                          &kp C_PREVIOUS  &trans   &kp C_NEXT           &kp BACKSPACE    &kp SPACE     &kp DOT
-            >;
         };
 
         Numpad {
@@ -484,23 +474,23 @@
             >;
         };
 
-        Special {
-            display-name = "Special";
+        Funtion {
+            display-name = "Funtion";
             bindings = <
-           &kp EXCLAMATION  &kp AT_SIGN   &kp HASH  &kp DOLLAR  &kp PERCENT             &kp CARET              &kp AMPERSAND   &kp UP_ARROW     &kp ASTERISK     &kp PAGE_UP
-           &kp TILDE        &kp QUESTION  &trans    &trans      &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp PAGE_DOWN
-&kp LSHFT  &kp GRAVE        &trans        &trans    &trans      &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp HOME        &kp INSERT       &kp END          &kp QUESTION   &OSM_shift RIGHT_SHIFT
-                                          &kp TAB   &kp SPACE   &kp ENTER               &trans                 &kp LEFT_ARROW  &kp RIGHT_ARROW
+         &kp F1  &kp F2   &kp F3             &kp F4     &kp LBKT                &kp RBKT               &kp HOME        &kp UP_ARROW      &kp END          &kp PAGE_UP
+         &kp F5  &kp F6   &kp F7             &kp F8     &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp PAGE_DOWN
+&kp F13  &kp F9  &kp F10  &kp F11            &kp F12    &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT       &kp C_AC_ZOOM_OUT  &OSM_shift C_AC_ZOOM_IN
+                          &kp C_VOLUME_DOWN  &kp SPACE  &kp C_VOLUME_UP         &trans                 &kp LEFT_ARROW  &kp RIGHT_ARROW
             >;
         };
 
         Shortcut {
             display-name = "Short";
             bindings = <
-                    &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)   &kp LG(N5)           &trans               &trans     &trans     &trans  &trans
-                    &kp LA(LC(A))     &kp LA(LC(S))     &kp LA(LC(D))     &kp LA(LC(F))      &td_mail             &trans               &trans     &trans     &trans  &trans
-&kp LC(LS(ESCAPE))  &kp Z             &kp LA(LC(X))     &kp LA(LC(C))     &kp LA(LC(V))      &kp LA(LC(B))        &trans               &trans     &trans     &trans  &trans  &trans
-                                                        &trans            &kp LS(LC(LA(F)))  &kp LS(LA(LC(A)))    &kp C_AL_CALCULATOR  &kp LG(A)  &kp LG(N)
+                    &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)   &kp LG(N5)           &kp LG(NUMBER_6)     &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)
+                    &kp LA(LC(A))     &kp LA(LC(S))     &kp LA(LC(D))     &kp LA(LC(F))      &td_mail             &trans               &trans      &trans      &trans      &trans
+&kp LC(LS(ESCAPE))  &kp Z             &kp LA(LC(X))     &kp LA(LC(C))     &kp LA(LC(V))      &kp LA(LC(B))        &trans               &trans      &trans      &trans      &trans      &trans
+                                                        &trans            &kp LS(LC(LA(F)))  &kp LS(LA(LC(A)))    &kp C_AL_CALCULATOR  &kp LG(A)   &kp LG(N)
             >;
         };
 
