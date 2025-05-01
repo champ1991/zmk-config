@@ -208,152 +208,179 @@
     combos {
         compatible = "zmk,combos";
 
-        Delete {
+        Delete_alt {
             bindings = <&hm LEFT_ALT DEL>;
             key-positions = <11 12>;
+            layers = <0 6>;
         };
 
         caps_word {
             bindings = <&caps_word>;
             key-positions = <16 17>;
-            layers = <0>;
+            layers = <0 6>;
+            timeout-ms = <350>;
         };
 
         Enter {
             bindings = <&kp ENTER>;
             key-positions = <19 18>;
+            layers = <0 6>;
+            timeout-ms = <350>;
         };
 
         Esc {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
+            layers = <0 6>;
         };
 
         brackets {
             bindings = <&Macro_brackets>;
             key-positions = <13 14>;
+            layers = <0 6>;
         };
 
         caps {
             bindings = <&kp CAPS>;
             key-positions = <12 13 16 17>;
+            layers = <0 6>;
         };
 
         four {
             bindings = <&kp DOLLAR>;
             key-positions = <4 3>;
+            layers = <0 3 6>;
         };
 
         question {
             bindings = <&kp QUESTION>;
             key-positions = <27 28>;
             timeout-ms = <350>;
-            layers = <0>;
+            layers = <0 3 6>;
         };
 
         del {
             bindings = <&kp DEL>;
             key-positions = <18 17>;
+            layers = <0 6>;
         };
 
         quotes {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <30 29>;
+            layers = <0 6>;
         };
 
         Bang {
             bindings = <&hm LEFT_CONTROL EXCLAMATION>;
             key-positions = <23 24>;
             timeout-ms = <350>;
+            layers = <0 6>;
         };
 
         qua {
             bindings = <&kp SQT>;
             key-positions = <29 28>;
+            layers = <0 6>;
         };
 
         win {
             bindings = <&kp LEFT_WIN>;
             key-positions = <21 22>;
             timeout-ms = <350>;
+            layers = <0 6>;
         };
 
         xcut {
             bindings = <&kp LC(X)>;
             key-positions = <22 23>;
             timeout-ms = <350>;
+            layers = <0 6>;
         };
 
         shift {
             bindings = <&hm LEFT_SHIFT BACKSPACE>;
             key-positions = <13 12>;
+            layers = <0 6>;
         };
 
         five {
             bindings = <&kp PERCENT>;
             key-positions = <6 5>;
+            layers = <0 3 6>;
         };
 
         six {
             bindings = <&kp CARET>;
             key-positions = <6 7>;
-            layers = <0>;
+            layers = <0 3 6>;
         };
 
         seven {
             bindings = <&kp AMPERSAND>;
             key-positions = <8 7>;
+            layers = <0 3 6>;
         };
 
         two {
             bindings = <&kp AT_SIGN>;
             key-positions = <1 2>;
+            layers = <0 3 6>;
         };
 
         three {
             bindings = <&kp HASH>;
             key-positions = <2 3>;
+            layers = <0 3 6>;
         };
 
         eight {
             bindings = <&kp ASTERISK>;
             key-positions = <8 9>;
+            layers = <0 3 6>;
         };
 
         wave {
             bindings = <&kp TILDE>;
             key-positions = <10 11>;
+            layers = <0 3 6>;
         };
 
         Macro_brackets {
             bindings = <&Macro_bracket_r>;
             key-positions = <15 16>;
-            layers = <0>;
+            layers = <0 3 6>;
+            timeout-ms = <350>;
         };
 
         TG {
             bindings = <&tog 6>;
             key-positions = <10 19>;
+            timeout-ms = <350>;
         };
 
         sleep {
             bindings = <&kp C_SLEEP>;
             key-positions = <20 31>;
+            layers = <0>;
         };
 
         backtick {
             bindings = <&kp GRAVE>;
             key-positions = <20 21>;
+            layers = <0 6>;
         };
 
         backslash {
             bindings = <&kp BACKSLASH>;
             key-positions = <31 30>;
+            layers = <0 6>;
         };
 
         win_tab {
             bindings = <&kp LG(TAB)>;
             key-positions = <0 20>;
+            layers = <0 6>;
         };
     };
 
@@ -416,20 +443,20 @@
 
         Gaming {
             bindings = <
-              &kp TAB    &kp Q  &kp W     &kp E      &kp R        &kp Y     &kp U      &kp I          &kp O    &kp P
-              &kp LSHFT  &kp A  &kp S     &kp D      &kp F        &kp H     &kp J      &kp K          &kp L    &kp SEMI
-&lt 2 ESCAPE  &kp LCTRL  &kp Z  &kp X     &kp C      &kp V        &kp N     &kp M      &kp COMMA      &kp DOT  &kp FSLH  &kp ENTER
-                                &kp LALT  &kp SPACE  &kp ENTER    &kp BSPC  &kp SPACE  &kp LS(SPACE)
+              &kp TAB    &kp Q  &kp W     &kp E      &kp R          &kp Y     &kp U      &kp I          &kp O    &kp P
+              &kp LSHFT  &kp A  &kp S     &kp D      &kp F          &kp H     &kp J      &kp K          &kp L    &kp SEMI
+&lt 2 ESCAPE  &kp LCTRL  &kp Z  &kp X     &kp C      &kp V          &kp N     &kp M      &kp COMMA      &kp DOT  &kp FSLH  &kp ENTER
+                                &kp LALT  &kp SPACE  &lt 3 ENTER    &kp BSPC  &kp SPACE  &kp LS(SPACE)
             >;
         };
 
         function {
             display-name = "Media";
             bindings = <
-           &kp F1  &kp F2   &kp F3          &kp F4   &kp K_MUTE           &kp AMPERSAND    &kp ASTERISK  &Macro_brackets  &kp MINUS       &kp PLUS
-           &kp F5  &kp F6   &kp F7          &kp F8   &kp C_VOLUME_UP      &kp DOLLAR       &kp PERCENT   &kp CARET        &kp UNDERSCORE  &kp COLON
-&kp LSHFT  &kp F9  &kp F10  &kp F11         &kp F12  &kp C_VOLUME_DOWN    &kp EXCLAMATION  &kp AT_SIGN   &kp HASH         &kp COMMA       &kp SLASH  &kp EQUAL
-                            &kp C_PREVIOUS  &trans   &kp C_NEXT           &kp BACKSPACE    &kp SPACE     &kp DOT
+           &kp F1  &kp F2   &kp F3             &kp F4   &kp T              &kp AMPERSAND    &kp ASTERISK  &Macro_brackets  &kp MINUS       &kp PLUS
+           &kp F5  &kp F6   &kp F7             &kp F8   &kp G              &kp DOLLAR       &kp PERCENT   &kp CARET        &kp UNDERSCORE  &kp COLON
+&kp LSHFT  &kp F9  &kp F10  &kp F11            &kp F12  &kp B              &kp EXCLAMATION  &kp AT_SIGN   &kp HASH         &kp COMMA       &kp SLASH  &kp EQUAL
+                            &kp C_VOLUME_DOWN  &trans   &kp C_VOLUME_UP    &kp BACKSPACE    &kp SPACE     &kp DOT
             >;
         };
 
