@@ -497,10 +497,10 @@
         Shortcut {
             display-name = "Short";
             bindings = <
-                    &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)   &kp LG(N5)           &trans               &trans             &trans                  &trans  &trans
-                    &kp LA(LC(A))     &kp LA(LC(S))     &kp LA(LC(D))     &kp LA(LC(F))      &td_mail             &trans               &trans             &trans                  &trans  &trans
-&kp LC(LS(ESCAPE))  &kp Z             &kp LA(LC(X))     &kp LA(LC(C))     &kp LA(LC(V))      &kp LA(LC(B))        &trans               &trans             &trans                  &trans  &trans  &trans
-                                                        &trans            &kp LS(LC(LA(F)))  &kp LS(LA(LC(A)))    &kp C_AL_CALCULATOR  &kp C_AL_CALENDAR  &kp C_AL_AUDIO_BROWSER
+                    &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)   &kp LG(N5)           &trans               &trans     &trans     &trans  &trans
+                    &kp LA(LC(A))     &kp LA(LC(S))     &kp LA(LC(D))     &kp LA(LC(F))      &td_mail             &trans               &trans     &trans     &trans  &trans
+&kp LC(LS(ESCAPE))  &kp Z             &kp LA(LC(X))     &kp LA(LC(C))     &kp LA(LC(V))      &kp LA(LC(B))        &trans               &trans     &trans     &trans  &trans  &trans
+                                                        &trans            &kp LS(LC(LA(F)))  &kp LS(LA(LC(A)))    &kp C_AL_CALCULATOR  &kp LG(A)  &kp LG(N)
             >;
         };
 
