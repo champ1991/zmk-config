@@ -450,7 +450,7 @@
                                 &kp LALT  &kp SPACE  &lt 4 ENTER    &kp BSPC  &lt 3 SPACE  &kp LS(SPACE)
             >;
 
-            label = "G!^_[3]";
+            label = "♪♬★☺☻";
         };
 
         Colemak {
