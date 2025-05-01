@@ -433,7 +433,7 @@
         compatible = "zmk,keymap";
 
         Totem {
-            display-name = "(-. -)";
+            display-name = "Totem";
             bindings = <
                        &kp Q  &kp W         &over_E_ctl  &over_R_f4   &kp T               &kp Y            &kp U         &over_I_Up     &kp O          &kp P
                        &kp A  &over_S_save  &over_D_ctl  &over_F_ctl  &kp G               &kp H            &over_J_Left  &over_K_Down   &over_L_Right  &kp SEMICOLON
@@ -450,7 +450,7 @@
                                 &kp LALT  &kp SPACE  &lt 4 ENTER    &kp BSPC  &lt 3 SPACE  &kp LS(SPACE)
             >;
 
-            label = "0_0";
+            label = "GAME '-'";
         };
 
         Colemak {
@@ -512,7 +512,7 @@
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
 
-            label = " /)/)";
+            label = "Dexter";
         };
     };
 };
