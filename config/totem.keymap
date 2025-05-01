@@ -275,7 +275,7 @@
             bindings = <&hm LEFT_CONTROL EXCLAMATION>;
             key-positions = <23 24>;
             timeout-ms = <350>;
-            layers = <0 2>;
+            layers = <0 2 4>;
         };
 
         qua {
