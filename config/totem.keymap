@@ -467,10 +467,10 @@
         function {
             display-name = "Media";
             bindings = <
-           &kp F1  &kp F2   &kp F3             &kp F4   &kp T              &kp AMPERSAND    &kp ASTERISK  &Macro_brackets  &kp MINUS       &kp PLUS
-           &kp F5  &kp F6   &kp F7             &kp F8   &kp G              &kp DOLLAR       &kp PERCENT   &kp CARET        &kp UNDERSCORE  &kp COLON
-&kp LSHFT  &kp F9  &kp F10  &kp F11            &kp F12  &kp B              &kp EXCLAMATION  &kp AT_SIGN   &kp HASH         &kp COMMA       &kp SLASH  &kp EQUAL
-                            &kp C_VOLUME_DOWN  &trans   &kp C_VOLUME_UP    &kp BACKSPACE    &kp SPACE     &kp DOT
+         &kp F1  &kp F2   &kp F3          &kp F4   &kp K_MUTE           &kp AMPERSAND    &kp ASTERISK  &Macro_brackets  &kp MINUS       &kp PLUS
+         &kp F5  &kp F6   &kp F7          &kp F8   &kp C_VOLUME_UP      &kp DOLLAR       &kp PERCENT   &kp CARET        &kp UNDERSCORE  &kp COLON
+&kp F13  &kp F9  &kp F10  &kp F11         &kp F12  &kp C_VOLUME_DOWN    &kp EXCLAMATION  &kp AT_SIGN   &kp HASH         &kp COMMA       &kp SLASH  &kp EQUAL
+                          &kp C_PREVIOUS  &trans   &kp C_NEXT           &kp BACKSPACE    &kp SPACE     &kp DOT
             >;
         };
 
