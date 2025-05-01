@@ -494,7 +494,7 @@
             >;
         };
 
-        Gameplus {
+        Gameadd {
             bindings = <
         &trans  &kp N1  &kp N2  &kp N3  &kp T    &kp  &kp  &kp  &kp  &kp
         &trans  &kp N4  &kp N5  &kp N6  &kp G    &kp  &kp  &kp  &kp  &kp
