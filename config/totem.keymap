@@ -257,7 +257,7 @@
             bindings = <&kp QUESTION>;
             key-positions = <27 28>;
             timeout-ms = <350>;
-            layers = <0 3 2>;
+            layers = <0 2>;
         };
 
         del {
@@ -452,13 +452,13 @@
 
         Gaming {
             bindings = <
-              &kp TAB    &kp Q  &kp W     &kp E      &kp R          &kp Y     &kp U        &kp I          &kp O    &kp P
-              &kp LSHFT  &kp A  &kp S     &kp D      &kp F          &kp H     &kp J        &kp K          &kp L    &kp SEMI
-&lt 0 ESCAPE  &kp LCTRL  &kp Z  &kp X     &kp C      &kp V          &kp N     &kp M        &kp COMMA      &kp DOT  &kp FSLH  &kp ENTER
-                                &kp LALT  &kp SPACE  &lt 6 ENTER    &kp BSPC  &lt 0 SPACE  &kp LS(SPACE)
+              &kp TAB    &kp Q  &kp W     &kp E      &kp R          &kp Y     &kp U           &kp UP_ARROW    &kp O            &kp P
+              &kp LSHFT  &kp A  &kp S     &kp D      &kp F          &kp H     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp SEMI
+&lt 0 ESCAPE  &kp LCTRL  &kp Z  &kp X     &kp C      &kp V          &kp N     &kp M           &kp COMMA       &kp DOT          &kp FSLH  &kp ENTER
+                                &kp LALT  &kp SPACE  &lt 6 ENTER    &kp BSPC  &lt 0 SPACE     &kp LS(SPACE)
             >;
 
-            label = "GAME '-'";
+            label = "ISAAC'-'";
         };
 
         Colemak {
