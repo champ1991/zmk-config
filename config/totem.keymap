@@ -349,7 +349,7 @@
         Macro_brackets {
             bindings = <&Macro_bracket_r>;
             key-positions = <15 16>;
-            layers = <0 3 2>;
+            layers = <0 2>;
             timeout-ms = <350>;
         };
 
