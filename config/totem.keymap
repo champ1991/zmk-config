@@ -300,10 +300,10 @@
             layers = <0 2>;
         };
 
-        shift {
+        backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <23 24>;
-            layers = <0 2 4>;
+            layers = <0 2 3>;
         };
 
         five {
