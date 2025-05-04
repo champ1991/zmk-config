@@ -303,7 +303,7 @@
         shift {
             bindings = <&hm LEFT_SHIFT BACKSPACE>;
             key-positions = <13 12>;
-            layers = <0 2>;
+            layers = <0 2 4>;
         };
 
         five {
@@ -487,7 +487,7 @@
             bindings = <
          &kp F1  &kp F2   &kp F3             &kp F4     &kp LBKT                &kp RBKT               &kp HOME        &kp UP_ARROW      &kp END          &kp PAGE_UP
          &kp F5  &kp F6   &kp F7             &kp F8     &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp PAGE_DOWN
-&kp F13  &kp F9  &kp F10  &kp F11            &kp F12    &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT       &kp C_AC_ZOOM_OUT  &kp C_AC_ZOOM_IN
+&kp F13  &kp F9  &kp F10  &kp F11            &kp F12    &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT       &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))
                           &kp C_VOLUME_DOWN  &kp SPACE  &kp C_VOLUME_UP         &trans                 &kp LEFT_ARROW  &kp RIGHT_ARROW
             >;
         };
