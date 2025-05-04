@@ -348,7 +348,7 @@
         };
 
         wave {
-            bindings = <&kp TILDE>;
+            bindings = <&hm LEFT_CONTROL TILDE>;
             key-positions = <10 11>;
             layers = <0 3 2>;
             require-prior-idle-ms = <100>;
@@ -376,7 +376,7 @@
 
         backtick {
             bindings = <&kp GRAVE>;
-            key-positions = <20 21>;
+            key-positions = <20 10>;
             layers = <0 2>;
         };
 
