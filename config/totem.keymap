@@ -395,6 +395,7 @@
         semi {
             bindings = <&kp SEMICOLON>;
             key-positions = <19 18>;
+            layers = <0 2>;
         };
     };
 
