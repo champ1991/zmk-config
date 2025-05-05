@@ -244,6 +244,7 @@
             bindings = <&kp CAPS>;
             key-positions = <0 1 8 9>;
             layers = <0 2>;
+            timeout-ms = <350>;
         };
 
         four {
@@ -275,7 +276,6 @@
         Bang {
             bindings = <&hm LEFT_SHIFT EXCLAMATION>;
             key-positions = <12 13>;
-            timeout-ms = <350>;
             layers = <0 2 3>;
         };
 
@@ -351,7 +351,6 @@
             bindings = <&hm LEFT_CONTROL TILDE>;
             key-positions = <10 11>;
             layers = <0 3 2>;
-            require-prior-idle-ms = <100>;
         };
 
         Macro_brackets {
