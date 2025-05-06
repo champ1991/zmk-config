@@ -203,6 +203,17 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        hm_caps_word: hm_caps_word {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_CAPS_WORD";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <130>;
+            global-quick-tap;
+            bindings = <&kp>, <&caps_word>;
+        };
     };
 
     combos {
@@ -215,7 +226,7 @@
         };
 
         caps_word {
-            bindings = <&caps_word>;
+            bindings = <&hm_caps_word RIGHT_SHIFT 0>;
             key-positions = <16 17>;
             layers = <0 2>;
         };
@@ -261,7 +272,7 @@
         };
 
         del {
-            bindings = <&kp DEL>;
+            bindings = <&hm RIGHT_ALT DELETE>;
             key-positions = <18 17>;
             layers = <0 2>;
         };
@@ -389,7 +400,7 @@
         };
 
         semi {
-            bindings = <&kp SEMICOLON>;
+            bindings = <&hm RCTRL SEMICOLON>;
             key-positions = <19 18>;
             layers = <0 2>;
         };
