@@ -203,17 +203,6 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
-
-        hm_caps_word: hm_caps_word {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HM_CAPS_WORD";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <130>;
-            global-quick-tap;
-            bindings = <&kp>, <&caps_word>;
-        };
     };
 
     combos {
@@ -225,8 +214,8 @@
             layers = <0 2>;
         };
 
-        caps_word {
-            bindings = <&hm_caps_word RIGHT_SHIFT 0>;
+        question {
+            bindings = <&hm RIGHT_SHIFT QUESTION>;
             key-positions = <16 17>;
             layers = <0 2>;
         };
@@ -264,8 +253,8 @@
             require-prior-idle-ms = <100>;
         };
 
-        question {
-            bindings = <&kp QUESTION>;
+        caps_word {
+            bindings = <&caps_word>;
             key-positions = <27 28>;
             timeout-ms = <350>;
             layers = <0 2>;
@@ -283,8 +272,8 @@
             layers = <0 2>;
         };
 
-        backspace {
-            bindings = <&hm LEFT_SHIFT BACKSPACE>;
+        exclamation {
+            bindings = <&hm LEFT_SHIFT EXCLAMATION>;
             key-positions = <12 13>;
             layers = <0 2 3>;
         };
@@ -309,8 +298,8 @@
             layers = <0 2>;
         };
 
-        exclamation {
-            bindings = <&kp EXCLAMATION>;
+        backspace {
+            bindings = <&kp BACKSPACE>;
             key-positions = <23 24>;
             layers = <0 2 3>;
         };
