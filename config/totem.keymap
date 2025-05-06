@@ -272,8 +272,8 @@
             layers = <0 2>;
         };
 
-        delete {
-            bindings = <&hm LEFT_SHIFT DELETE>;
+        backspace {
+            bindings = <&hm LEFT_SHIFT BACKSPACE>;
             key-positions = <12 13>;
             layers = <0 2 3>;
         };
