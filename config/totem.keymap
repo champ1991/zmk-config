@@ -215,9 +215,10 @@
         };
 
         question {
-            bindings = <&hm RIGHT_SHIFT QUESTION>;
+            bindings = <&kp QUESTION>;
             key-positions = <16 17>;
             layers = <0 2>;
+            timeout-ms = <350>;
         };
 
         Enter {
