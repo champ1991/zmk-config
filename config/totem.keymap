@@ -203,6 +203,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        ht_test: ht_test {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_TEST";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <350>;
+        };
     };
 
     combos {
